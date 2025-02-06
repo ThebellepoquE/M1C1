@@ -1,3 +1,12 @@
+.gridOne,
+.gridTwo,
+.gridThree,
+.gridFour,
+.gridFive,
+.gridSix {
+    margin-top: 20px; 
+}
+
 .gridOne {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -29,9 +38,15 @@
 }
 
 .gridThree-image {
-    width: 500px;
+    width: 100%;
     height: 225px;
+}
+
+.gridThree-image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .gridFour {
@@ -39,8 +54,12 @@
     grid-template-rows: 1fr 1fr;
     background-color: green;
     width: 500px;
-    padding-top: 50px;
+    margin-top: 0;
     font-weight: bold;
+}
+
+.gridFour-unique-class {
+    border-top: solid 20px white;
 }
 
 #gridFour-id {
@@ -60,7 +79,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     object-fit: cover;
-    gap: 10px;
+    gap: 15px;
 }
 
 .gridFive-images img {
@@ -74,7 +93,6 @@
     grid-template-rows: 1fr 3fr;
     background-color: lightgray;
     width: 500px;
-    align-items: start;
 }
 
 .gridSix-fontawesome i {
@@ -83,6 +101,9 @@
 
 .gridSix-text p {
     font-family: "Open Sans", serif;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
 }
 
 
